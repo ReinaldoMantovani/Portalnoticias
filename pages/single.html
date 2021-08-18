@@ -1,0 +1,36 @@
+<%- include('partials/header.html') %>
+
+<section  class="noticia">
+ 
+        <div  class="noticia-single">
+          <a href="/" class="back-home">
+            <i class='fas fa-long-arrow-alt-left'></i>
+                 Voltar
+          </a>
+           <h2> <%= noticia.titulo %> </h2>
+           
+           <div class="autor-nome">
+            <i class='fas fa-pencil-alt'></i>
+              <span> Por: <%= noticia.autor %>  </span>
+           </div><!--Autor-Nome-->
+
+           <div>
+              <img style="max-width:100%; margin-top: 10px; " src="<%= noticia.imagem %>" alt="Supernatural">
+           </div>
+           <br>
+
+          <div style="line-height: 30px;">
+            <%-  noticia.conteudo %>
+          </div> 
+
+        
+              
+</section><!--Noticia-->
+
+
+
+<%- include('partials/footer.html') %>
+
+
+</body>
+</html>
